@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const platform = navigator.userAgentData?.platform || navigator.platform || '';
+  const isWindows = /windows|win32|win64/i.test(platform);
+
+  document.body.classList.toggle('non-windows', !isWindows);
+
   const buttons = document.querySelectorAll('.button > a');
 
   buttons.forEach((button) => {
