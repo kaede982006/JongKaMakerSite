@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Paperozi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+h1 {
+    width: min(620px, 92vw);
+    margin: 24px auto 48px;
+
+    text-align: center;
+    background: rgba(255, 255, 255, 0.94);
+    color: #111;
+
+    padding: 28px 36px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 28px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+
+    font-size: clamp(1.35rem, 2.2vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+
+    backdrop-filter: blur(8px);
+}
+
+
+#jongka {
+    font-family: 'Paperozi';
+    color: white;
+    width: 1fr;
+    height: 1fr;
+    background-image: url("rep.webp");
+    background-size: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.button {
+    margin: 25px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: solid 4px;
+    padding: 20px 0;
+}
+
+.button > a {
+    color: black;
+    text-decoration-line: none;
+    font-size: 18px;
+}
