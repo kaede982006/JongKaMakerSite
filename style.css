@@ -41,6 +41,13 @@ h1 {
     font-weight: 700;
     line-height: 1.45;
 }
+body.non-windows,
+body#jongka.non-windows {
+    background-color: white;
+    background-image: none;
+    min-height: 100vh;
+    margin: 0;
+}
 
 body.non-windows .platform-notice {
     box-sizing: border-box;
