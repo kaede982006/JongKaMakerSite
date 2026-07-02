@@ -1,44 +1,12 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <title>JongKaMaker: 종카어 생성기</title>
-    </head>
-    <body id="jongka">
-        <h1>JongKaMaker: 종카어 생성기</h1>
-        <section class="maker" aria-label="JongKaMaker generator">
-            <textarea class="maker-output" readonly spellcheck="false" aria-label="Generated JongKaMaker text"></textarea>
-            <p class="maker-status" aria-live="polite">PATTERN: READY</p>
-            <div class="maker-actions">
-                <button class="action-button" type="button" id="generate-button">GENERATE</button>
-                <button class="action-button" type="button" id="copy-button">COPY</button>
-            </div>
-        </section>
-        <div class="grid">
-            <div class="button">
-                <a href="https://github.com/kaede982006/JongKaMakerSite" target="_blank">
-                    WEBSITE REPO
-                </a>
-            </div>
-
-            <div class="button">
-                <a href="./samples.txt" target="_blank">
-                    VIEW SAMPLE
-                </a>
-            </div>
-            <div class="button">
-                <a href="https://github.com/kaede982006/JongKaMakerSite/blob/main/LICENSE" target="_blank">
-                    VIEW LICENSE 
-                </a>
-            </div>
-            <div class="button">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                    ACCUSE THE DEVELOPER 
-                </a>
-            </div>
-        </div>
-        <script src="./main.js" defer></script>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JongKaMaker</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -1,0 +1,140 @@
+:root {
+  --page-gutter: clamp(12px, 4vw, 25px);
+  --page-width: calc(100vw - (var(--page-gutter) * 2));
+  color: white;
+  background: #141414;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    #141414;
+  background-size: 24px 24px;
+}
+
+h1 {
+  width: var(--page-width);
+  margin: 24px auto 48px;
+  padding: 28px 36px;
+  color: #111;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.maker {
+  width: var(--page-width);
+  margin: 0 auto 28px;
+  padding: 16px;
+  color: black;
+  background-color: white;
+  border: solid 4px black;
+}
+
+.maker-output {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  resize: vertical;
+  padding: 14px;
+  color: black;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: white;
+  border: solid 4px black;
+  font-family: "Segoe UI Symbol", "Apple Braille", "Noto Sans Symbols 2", monospace;
+  font-size: clamp(22px, 4vw, 32px);
+  line-height: 1.25;
+}
+
+.maker-status {
+  min-height: 20px;
+  margin: 10px 0 0;
+  color: black;
+  text-align: center;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.maker-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.action-button {
+  min-height: 54px;
+  color: black;
+  background-color: white;
+  border: solid 4px black;
+  cursor: pointer;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: var(--page-width);
+  margin: 0 auto 32px;
+}
+
+.button {
+  padding: 20px 0;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border: solid 4px black;
+}
+
+.button > a {
+  display: block;
+  color: black;
+  overflow-wrap: anywhere;
+  text-decoration-line: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  h1 {
+    margin-bottom: 28px;
+    padding: 22px 24px;
+  }
+
+  .maker {
+    padding: 12px;
+  }
+
+  .maker-output {
+    min-height: 190px;
+  }
+
+  .maker-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    gap: 16px;
+  }
+}

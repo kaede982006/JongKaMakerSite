@@ -1,0 +1,18 @@
+{
+  "name": "jongka-maker-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate": "node scripts/validate-generator.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "6.0.3",
+    "vite": "8.1.3",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  }
+}
